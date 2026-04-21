@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEXUS | Digital Intelligence Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-counter" id="loaderCounter">0</div>
+    <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+    <div class="loader-text">INITIALIZING NEXUS</div>
+  </div>
+</div>
+
+<!-- NAVIGATION -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">
+    <span class="logo-bracket">[</span>NEXUS<span class="logo-bracket">]</span>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" class="nav-link" data-text="HOME">HOME</a></li>
+    <li><a href="#services" class="nav-link" data-text="SERVICES">SERVICES</a></li>
+    <li><a href="#work" class="nav-link" data-text="WORK">WORK</a></li>
+    <li><a href="#about" class="nav-link" data-text="ABOUT">ABOUT</a></li>
+    <li><a href="#stats" class="nav-link" data-text="STATS">STATS</a></li>
+    <li><a href="#contact" class="nav-link" data-text="CONTACT">CONTACT</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="toggle-icon">◐</span>
+    </button>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#home" class="mobile-link">HOME</a></li>
+    <li><a href="#services" class="mobile-link">SERVICES</a></li>
+    <li><a href="#work" class="mobile-link">WORK</a></li>
+    <li><a href="#about" class="mobile-link">ABOUT</a></li>
+    <li><a href="#stats" class="mobile-link">STATS</a></li>
+    <li><a href="#contact" class="mobile-link">CONTACT</a></li>
+  </ul>
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <canvas class="hero-canvas" id="heroCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      AVAILABLE FOR PROJECTS — 2026
+    </div>
+    <h1 class="hero-title">
+      <span class="line" data-delay="0">WE BUILD</span>
+      <span class="line accent" data-delay="200">DIGITAL</span>
+      <span class="line" data-delay="400">EXPERIENCES</span>
+    </h1>
+    <p class="hero-sub">Cutting-edge web solutions, AI integrations,<br/>and design systems that scale.</p>
+    <div class="hero-cta">
+      <a href="#work" class="btn btn-primary">
+        <span>VIEW OUR WORK</span>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#contact" class="btn btn-ghost">START A PROJECT</a>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </div>
+  <div class="hero-ticker">
+    <div class="ticker-inner" id="tickerInner">
+      <span>WEB DEVELOPMENT</span><span>✦</span>
+      <span>UI/UX DESIGN</span><span>✦</span>
+      <span>AI INTEGRATION</span><span>✦</span>
+      <span>BRAND IDENTITY</span><span>✦</span>
+      <span>DIGITAL STRATEGY</span><span>✦</span>
+      <span>PERFORMANCE</span><span>✦</span>
+      <span>WEB DEVELOPMENT</span><span>✦</span>
+      <span>UI/UX DESIGN</span><span>✦</span>
+      <span>AI INTEGRATION</span><span>✦</span>
+      <span>BRAND IDENTITY</span><span>✦</span>
+      <span>DIGITAL STRATEGY</span><span>✦</span>
+      <span>PERFORMANCE</span><span>✦</span>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE DIVIDER -->
+<div class="marquee-divider">
+  <div class="marquee-track" id="marquee1">
+    <span>INNOVATION</span><span>—</span>
+    <span>CREATIVITY</span><span>—</span>
+    <span>EXCELLENCE</span><span>—</span>
+    <span>PRECISION</span><span>—</span>
+    <span>INNOVATION</span><span>—</span>
+    <span>CREATIVITY</span><span>—</span>
+    <span>EXCELLENCE</span><span>—</span>
+    <span>PRECISION</span><span>—</span>
+  </div>
+</div>
+
+<!-- SERVICES SECTION -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// WHAT WE DO</span>
+      <h2 class="section-title reveal">Our <em>Services</em></h2>
+      <p class="section-desc reveal">We craft end-to-end digital solutions with a focus on performance, scalability, and stunning design.</p>
+    </div>
+    <div class="services-grid" id="servicesGrid">
+      <div class="service-card reveal" data-index="0">
+        <div class="service-num">01</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 64 64"><rect x="8" y="8" width="48" height="48" rx="4" stroke-width="3"/><polyline points="20,32 28,40 44,24" stroke-width="3"/></svg>
+        </div>
+        <h3>Web Development</h3>
+        <p>High-performance websites and applications built with modern stacks. React, Next.js, Vue, Node.js — whatever your stack demands.</p>
+        <div class="service-tags">
+          <span>React</span><span>Next.js</span><span>Node</span>
+        </div>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-card reveal" data-index="1">
+        <div class="service-num">02</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="22" stroke-width="3"/><circle cx="32" cy="32" r="8" stroke-width="3"/><line x1="32" y1="10" x2="32" y2="24" stroke-width="3"/><line x1="32" y1="40" x2="32" y2="54" stroke-width="3"/></svg>
+        </div>
+        <h3>UI/UX Design</h3>
+        <p>User-centered design systems that convert. From wireframes to pixel-perfect interfaces with motion and micro-interactions.</p>
+        <div class="service-tags">
+          <span>Figma</span><span>Prototyping</span><span>Systems</span>
+        </div>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-card reveal" data-index="2">
+        <div class="service-num">03</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 64 64"><polygon points="32,8 56,24 56,40 32,56 8,40 8,24" stroke-width="3"/><circle cx="32" cy="32" r="8" stroke-width="3"/></svg>
+        </div>
+        <h3>AI Integration</h3>
+        <p>Embed intelligence into your product. LLM pipelines, computer vision, recommendation engines, and custom model fine-tuning.</p>
+        <div class="service-tags">
+          <span>OpenAI</span><span>LangChain</span><span>ML</span>
+        </div>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-card reveal" data-index="3">
+        <div class="service-num">04</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 64 64"><rect x="8" y="16" width="48" height="32" rx="3" stroke-width="3"/><line x1="8" y1="24" x2="56" y2="24" stroke-width="3"/><circle cx="14" cy="20" r="2" fill="currentColor"/><circle cx="20" cy="20" r="2" fill="currentColor"/></svg>
+        </div>
+        <h3>Brand Identity</h3>
+        <p>Logos, visual identities, and brand systems that tell your story. We create brands that resonate and endure.</p>
+        <div class="service-tags">
+          <span>Logo</span><span>Identity</span><span>Print</span>
+        </div>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-card reveal" data-index="4">
+        <div class="service-num">05</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 64 64"><polyline points="8,48 20,28 30,36 42,16 56,24" stroke-width="3"/><circle cx="56" cy="24" r="4" fill="currentColor"/></svg>
+        </div>
+        <h3>Performance Audit</h3>
+        <p>Deep technical audits of your web stack. Core Web Vitals optimization, SEO enhancement, and conversion rate improvements.</p>
+        <div class="service-tags">
+          <span>SEO</span><span>CWV</span><span>Analytics</span>
+        </div>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-card reveal" data-index="5">
+        <div class="service-num">06</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 64 64"><rect x="16" y="8" width="32" height="48" rx="4" stroke-width="3"/><line x1="22" y1="20" x2="42" y2="20" stroke-width="3"/><line x1="22" y1="28" x2="42" y2="28" stroke-width="3"/><line x1="22" y1="36" x2="34" y2="36" stroke-width="3"/></svg>
+        </div>
+        <h3>Digital Strategy</h3>
+        <p>Roadmaps that translate vision into execution. We align technology choices with business goals and growth targets.</p>
+        <div class="service-tags">
+          <span>Strategy</span><span>Growth</span><span>OKRs</span>
+        </div>
+        <div class="service-arrow">→</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK / PORTFOLIO -->
+<section class="work" id="work">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// SELECTED WORK</span>
+      <h2 class="section-title reveal">Featured <em>Projects</em></h2>
+    </div>
+    <div class="work-filters reveal">
+      <button class="filter-btn active" data-filter="all">ALL</button>
+      <button class="filter-btn" data-filter="web">WEB</button>
+      <button class="filter-btn" data-filter="design">DESIGN</button>
+      <button class="filter-btn" data-filter="ai">AI</button>
+      <button class="filter-btn" data-filter="brand">BRAND</button>
+    </div>
+    <div class="work-grid" id="workGrid">
+      <div class="work-item" data-category="web" data-color="#ff4d00">
+        <div class="work-img" style="background: linear-gradient(135deg,#1a0a0a,#ff4d00)">
+          <div class="work-img-content">
+            <div class="work-browser">
+              <div class="browser-bar"><span></span><span></span><span></span></div>
+              <div class="browser-body"></div>
+            </div>
+          </div>
+        </div>
+        <div class="work-info">
+          <div class="work-tags"><span>WEB</span><span>E-COMMERCE</span></div>
+          <h3>AURORA Shop</h3>
+          <p>Full-stack e-commerce platform with AI-powered recommendations and real-time inventory.</p>
+          <a href="#" class="work-link">VIEW PROJECT →</a>
+        </div>
+      </div>
+      <div class="work-item" data-category="ai" data-color="#00d4ff">
+        <div class="work-img" style="background: linear-gradient(135deg,#0a0a1a,#00d4ff)">
+          <div class="work-img-content">
+            <div class="work-neural">
+              <canvas id="neuralCanvas" width="200" height="120"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="work-info">
+          <div class="work-tags"><span>AI</span><span>SAAS</span></div>
+          <h3>NeuralDesk</h3>
+          <p>AI-powered customer support platform processing 10k+ tickets daily with 94% accuracy.</p>
+          <a href="#" class="work-link">VIEW PROJECT →</a>
+        </div>
+      </div>
+      <div class="work-item" data-category="design" data-color="#a855f7">
+        <div class="work-img" style="background: linear-gradient(135deg,#0d0a1a,#a855f7)">
+          <div class="work-img-content">
+            <div class="work-design-preview">
+              <div class="dp-circle"></div>
+              <div class="dp-rect"></div>
+              <div class="dp-lines"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="work-info">
+          <div class="work-tags"><span>DESIGN</span><span>SYSTEM</span></div>
+          <h3>Prism DS</h3>
+          <p>Comprehensive design system for a Fortune 500 company — 200+ components, tokens, and docs.</p>
+          <a href="#" class="work-link">VIEW PROJECT →</a>
+        </div>
+      </div>
+      <div class="work-item" data-category="brand" data-color="#22c55e">
+        <div class="work-img" style="background: linear-gradient(135deg,#0a1a0a,#22c55e)">
+          <div class="work-img-content">
+            <div class="work-brand-preview">
+              <div class="brand-logo-preview">B</div>
+            </div>
+          </div>
+        </div>
+        <div class="work-info">
+          <div class="work-tags"><span>BRAND</span><span>IDENTITY</span></div>
+          <h3>Bloom Capital</h3>
+          <p>Complete brand identity for a Series B fintech startup: logo, system, motion guidelines.</p>
+          <a href="#" class="work-link">VIEW PROJECT →</a>
+        </div>
+      </div>
+      <div class="work-item" data-category="web" data-color="#f59e0b">
+        <div class="work-img" style="background: linear-gradient(135deg,#1a1200,#f59e0b)">
+          <div class="work-img-content">
+            <div class="work-chart-preview">
+              <div class="chart-bars">
+                <div style="height:40%"></div>
+                <div style="height:65%"></div>
+                <div style="height:50%"></div>
+                <div style="height:80%"></div>
+                <div style="height:60%"></div>
+                <div style="height:90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work-info">
+          <div class="work-tags"><span>WEB</span><span>DASHBOARD</span></div>
+          <h3>Meridian Analytics</h3>
+          <p>Real-time analytics dashboard handling billions of events with sub-second query times.</p>
+          <a href="#" class="work-link">VIEW PROJECT →</a>
+        </div>
+      </div>
+      <div class="work-item" data-category="ai" data-color="#ec4899">
+        <div class="work-img" style="background: linear-gradient(135deg,#1a001a,#ec4899)">
+          <div class="work-img-content">
+            <div class="work-ai-preview">
+              <div class="ai-wave" id="aiWave"></div>
+            </div>
+          </div>
+        </div>
+        <div class="work-info">
+          <div class="work-tags"><span>AI</span><span>AUDIO</span></div>
+          <h3>VoiceForge AI</h3>
+          <p>Real-time voice synthesis and cloning platform used by 50k+ podcasters worldwide.</p>
+          <a href="#" class="work-link">VIEW PROJECT →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left reveal">
+        <span class="section-tag">// WHO WE ARE</span>
+        <h2 class="section-title">We're a team of <em>builders</em> & <em>thinkers</em></h2>
+        <p>Founded in 2018, NEXUS has grown from a 2-person studio to a 40-strong agency delivering world-class digital products for clients across 22 countries.</p>
+        <p>We believe the best products emerge at the intersection of bold design, clean engineering, and genuine empathy for users.</p>
+        <div class="about-values">
+          <div class="value-item">
+            <span class="value-icon">⬡</span>
+            <div>
+              <strong>Craft First</strong>
+              <p>We obsess over details others skip. Every pixel, every millisecond matters.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">⬡</span>
+            <div>
+              <strong>Radical Transparency</strong>
+              <p>No black boxes. You know what we're building, why, and how it's going.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">⬡</span>
+            <div>
+              <strong>Long-term Thinking</strong>
+              <p>We build systems, not hacks. Scalable, maintainable, future-proof.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary">LET'S WORK TOGETHER →</a>
+      </div>
+      <div class="about-right reveal">
+        <div class="team-grid" id="teamGrid">
+          <div class="team-card">
+            <div class="team-avatar" style="background:linear-gradient(135deg,#ff4d00,#ff9900)">
+              <span>AK</span>
+            </div>
+            <div class="team-info">
+              <strong>Amir Khan</strong>
+              <span>CEO & Co-founder</span>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar" style="background:linear-gradient(135deg,#00d4ff,#0066ff)">
+              <span>SL</span>
+            </div>
+            <div class="team-info">
+              <strong>Sofia Lee</strong>
+              <span>CTO & Co-founder</span>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar" style="background:linear-gradient(135deg,#a855f7,#ec4899)">
+              <span>MP</span>
+            </div>
+            <div class="team-info">
+              <strong>Marcus Patel</strong>
+              <span>Head of Design</span>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar" style="background:linear-gradient(135deg,#22c55e,#16a34a)">
+              <span>NR</span>
+            </div>
+            <div class="team-info">
+              <strong>Nina Ross</strong>
+              <span>Lead Engineer</span>
+            </div>
+          </div>
+        </div>
+        <div class="tech-stack">
+          <div class="stack-title">OUR STACK</div>
+          <div class="stack-items" id="stackItems">
+            <span data-tip="React">⚛</span>
+            <span data-tip="Next.js">▲</span>
+            <span data-tip="TypeScript">TS</span>
+            <span data-tip="Node.js">⬡</span>
+            <span data-tip="Python">🐍</span>
+            <span data-tip="PostgreSQL">🐘</span>
+            <span data-tip="Redis">R</span>
+            <span data-tip="Docker">🐳</span>
+            <span data-tip="AWS">☁</span>
+            <span data-tip="Figma">◈</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS SECTION -->
+<section class="stats" id="stats">
+  <div class="stats-bg"></div>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// BY THE NUMBERS</span>
+      <h2 class="section-title reveal">Results that <em>speak</em></h2>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card reveal" data-target="247">
+        <div class="stat-number" data-target="247">0</div>
+        <div class="stat-label">PROJECTS DELIVERED</div>
+        <div class="stat-sub">Since 2018</div>
+      </div>
+      <div class="stat-card reveal" data-target="98">
+        <div class="stat-number" data-target="98">0</div>
+        <div class="stat-label">CLIENT SATISFACTION</div>
+        <div class="stat-sub">% NPS score</div>
+      </div>
+      <div class="stat-card reveal" data-target="40">
+        <div class="stat-number" data-target="40">0</div>
+        <div class="stat-label">TEAM MEMBERS</div>
+        <div class="stat-sub">Across 8 countries</div>
+      </div>
+      <div class="stat-card reveal" data-target="22">
+        <div class="stat-number" data-target="22">0</div>
+        <div class="stat-label">COUNTRIES SERVED</div>
+        <div class="stat-sub">Global reach</div>
+      </div>
+    </div>
+    <!-- SKILLS PROGRESS BAR -->
+    <div class="skills-section reveal">
+      <h3>EXPERTISE AREAS</h3>
+      <div class="skill-bars" id="skillBars">
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span>Frontend Development</span><span class="skill-pct" data-pct="95">0%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span>Backend & APIs</span><span class="skill-pct" data-pct="90">0%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span>UI/UX Design</span><span class="skill-pct" data-pct="88">0%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span>AI / Machine Learning</span><span class="skill-pct" data-pct="80">0%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span>DevOps & Cloud</span><span class="skill-pct" data-pct="85">0%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+      </div>
+    </div>
+    <!-- INTERACTIVE CHART -->
+    <div class="chart-section reveal">
+      <h3>REVENUE GROWTH</h3>
+      <div class="chart-container">
+        <canvas id="growthChart" width="800" height="200"></canvas>
+      </div>
+      <div class="chart-legend">
+        <span><i style="background:#ff4d00"></i> 2024</span>
+        <span><i style="background:#00d4ff"></i> 2025</span>
+        <span><i style="background:#a855f7"></i> 2026</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// WHAT CLIENTS SAY</span>
+      <h2 class="section-title reveal">Trusted by <em>industry leaders</em></h2>
+    </div>
+    <div class="testimonial-carousel reveal" id="testimonialCarousel">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-slide active">
+          <blockquote>"NEXUS transformed our product completely. Our conversion rate jumped 340% within 6 months. The team's attention to detail is unmatched."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#ff4d00,#ff9900)">JW</div>
+            <div>
+              <strong>James Wheeler</strong>
+              <span>CEO, TechFlow Inc.</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote>"The AI integration they built for us reduced our support ticket volume by 70%. Extraordinary work delivered on time and on budget."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#00d4ff,#0066ff)">RM</div>
+            <div>
+              <strong>Rachel Moore</strong>
+              <span>CTO, Axiom Health</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote>"Our new design system has saved us thousands of development hours. It's beautiful, consistent, and the team actually uses it. Incredible achievement."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#a855f7,#ec4899)">DK</div>
+            <div>
+              <strong>Daniel Kim</strong>
+              <span>VP Product, Stratos Financial</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button class="testimonial-prev" id="tPrev">←</button>
+        <div class="testimonial-dots" id="tDots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="testimonial-next" id="tNext">→</button>
+      </div>
+    </div>
+    <div class="client-logos reveal">
+      <div class="logos-label">TRUSTED BY</div>
+      <div class="logos-track">
+        <div class="client-logo">AXIOM</div>
+        <div class="client-logo">STRATOS</div>
+        <div class="client-logo">TECHFLOW</div>
+        <div class="client-logo">MERIDIAN</div>
+        <div class="client-logo">VORTEX</div>
+        <div class="client-logo">POLARIS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// FREQUENTLY ASKED</span>
+      <h2 class="section-title reveal">Got <em>Questions?</em></h2>
+    </div>
+    <div class="faq-list reveal" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q">
+          How long does a typical project take?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Project timelines vary by scope. A standard website takes 4–8 weeks. A complex web application can range from 3–6 months. During our discovery call we provide detailed milestone estimates.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          What is your pricing model?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>We work on fixed-price project contracts or retainer agreements for ongoing engagements. Projects start from $15,000. We provide fully scoped proposals with no hidden costs.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          Do you work with early-stage startups?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Absolutely. We love working with ambitious founders. We offer MVP packages and startup-friendly payment structures. Many of our best long-term clients started as early-stage companies.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          What technologies do you specialize in?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Our primary stack includes React/Next.js, Node.js, Python, PostgreSQL, and cloud infrastructure on AWS and GCP. We're technology-agnostic and choose tools that best fit your requirements.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          Do you offer post-launch support?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Yes. All projects include a 30-day bug fix warranty. We also offer SLA-backed maintenance retainers with guaranteed response times and ongoing feature development.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-left reveal">
+        <span class="section-tag">// GET IN TOUCH</span>
+        <h2 class="section-title">Let's build<br/><em>something great</em></h2>
+        <p>Have a project in mind? We'd love to hear about it. Send us a message and we'll get back to you within 24 hours.</p>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">✉</span>
+            <div>
+              <strong>EMAIL</strong>
+              <a href="mailto:hello@nexus.studio">hello@nexus.studio</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">◎</span>
+            <div>
+              <strong>LOCATION</strong>
+              <span>San Francisco, CA & Remote</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">☎</span>
+            <div>
+              <strong>PHONE</strong>
+              <a href="tel:+14155550100">+1 (415) 555-0100</a>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link">TW</a>
+          <a href="#" class="social-link">LN</a>
+          <a href="#" class="social-link">GH</a>
+          <a href="#" class="social-link">DR</a>
+        </div>
+      </div>
+      <div class="contact-right reveal">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label>NAME</label>
+              <input type="text" name="name" placeholder="John Smith" required/>
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label>EMAIL</label>
+              <input type="email" name="email" placeholder="john@company.com" required/>
+              <span class="form-error" id="emailError"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>COMPANY</label>
+            <input type="text" name="company" placeholder="Your Company (optional)"/>
+          </div>
+          <div class="form-group">
+            <label>SERVICE</label>
+            <select name="service" required>
+              <option value="">Select a service...</option>
+              <option value="web">Web Development</option>
+              <option value="design">UI/UX Design</option>
+              <option value="ai">AI Integration</option>
+              <option value="brand">Brand Identity</option>
+              <option value="audit">Performance Audit</option>
+              <option value="strategy">Digital Strategy</option>
+            </select>
+            <span class="form-error" id="serviceError"></span>
+          </div>
+          <div class="form-group">
+            <label>BUDGET RANGE</label>
+            <div class="budget-slider-wrapper">
+              <input type="range" id="budgetSlider" min="5000" max="500000" step="5000" value="25000"/>
+              <div class="budget-display" id="budgetDisplay">$25,000</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>PROJECT BRIEF</label>
+            <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+            <div class="char-count"><span id="charCount">0</span>/500</div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span>SEND MESSAGE</span>
+            <svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <span>✓</span> Your message has been sent! We'll reply within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-bracket">[</span>NEXUS<span class="logo-bracket">]</span>
+        </div>
+        <p>Building digital experiences that matter. A creative agency for the modern web.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <strong>COMPANY</strong>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <strong>SERVICES</strong>
+          <ul>
+            <li><a href="#services">Web Dev</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">AI Integration</a></li>
+            <li><a href="#services">Strategy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <strong>CONNECT</strong>
+          <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Dribbble</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 NEXUS Studio. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <div class="back-to-top" id="backToTop">↑ TOP</div>
+    </div>
+  </div>
+</footer>
+
+<!-- TOAST NOTIFICATIONS -->
+<div class="toast-container" id="toastContainer"></div>
+
+<script src="main.js"></script>
+</body>
+</html>
